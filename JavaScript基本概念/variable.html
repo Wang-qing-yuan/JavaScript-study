@@ -14,6 +14,40 @@
             console.log(4>1&&10<15)
             var isAdult = (age<18)? "未成年":"成年人";
             console.log(isAdult)
+            //+= 赋值运算符
+            var a = 5;
+            var b = 6;
+            var c = 'hello';
+            var d = 'Nick';
+            a += b;
+            c += d;
+            console.log(a)
+            console.log(c)
+            //基本字符串
+            var coursename = 'JavaScript 微课';
+            var character = coursename[5];
+            console.log(character)
+            //特殊字符
+            var intro = 'I\m Loen \nThis is My List'
+            console.log("特殊字符串:"+intro)
+            //字符串长度
+            var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var len = txt.length;
+            console.log("字符串"+len)
+            //字符串运算符
+            var myString1 = "我在学习";
+            var myString2 = "JavaScript编程语言";
+    console.log("字符串运算符："+myString1 + myString2);
+    //在字符串中插入变量
+    var myName = "Loen";
+    var myStr = "My name is" +myName +" and I am well ";
+    console.log("在字符串中插入变量"+myStr)
+    //字符的不可变性
+    var myStr = "Bob";
+    myStr[0] = "J"
+    console.log("字符的不可变性"+myStr)
+    myStr = "Job";
+    console.log("字符的不可变性"+myStr)
         </script>
     </head>
     <body>
