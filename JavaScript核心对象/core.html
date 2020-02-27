@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>核心对象</title>
+        <script>
+            //对象
+            var  str = "Hello,Nier";
+            var a = str.toLowerCase();
+            var b = str.toUpperCase();
+            var c = "  Hello world ".trim();
+            console.log(a)
+            console.log(b)
+            console.log(c)
+            var str = "Hello world,welconme to the w3cschool.";
+            var n = str.indexOf("welconme");
+            var c = str.indexOf("loen");
+            console.log(n)
+            console.log(c)
+            var str = "Mr Blue has b blue house and a blue car and a blue hat";
+            var n = str.replace("bule","red");
+            var c = str.replace(/bule/g,"red");
+            console.log(n)
+            console.log(c)
+            var str = "Hello world";
+            document.write(str.substring(3)+"<br>");
+            document.write(str.substring(3,7));
+            //对象方法
+            function openWin(){
+                myWindow = window.open('','','width =200,height =100');
+                myWindow.document.write("<p>这是'我的窗口'</p>");
+               setTimeout(function(){myWindow.close()},6000);
+            }
+            //JSON数据
+            var text = '{"employees":[' +
+            '{"name":"baidu","site":"http://www.baidu.com"},'+
+            '{"name":"Google","site":"http://www.Google.com"},'+
+            '{"name":"Taobao","site":"http://www.taobao.com"}]}';
+            obj = JSON.parse(text);
+            document.getElementById("demo").innerHTML = obj.employees[1].name + " " + obj.employees[1].site;
+        </script>
+    </head>
+    <body></body>
+</html>
